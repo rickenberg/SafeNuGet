@@ -2,11 +2,7 @@
 using Owasp.SafeNuGet;
 using Owasp.SafeNuGet.NuGet;
 using Owasp.SafeNuGet.Unsafe;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Owasp.SafeNuGetTesting
 {

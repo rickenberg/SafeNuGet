@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="AreNuGetPackagesSafe.cs" />
     <Compile Include="DecisionMaker.cs" />
+    <Compile Include="ExtensionMethods.cs" />
     <Compile Include="PackageVersion.cs" />
     <Compile Include="Unsafe\Contracts.cs" />
     <Compile Include="Unsafe\PackageListLoader.cs" />

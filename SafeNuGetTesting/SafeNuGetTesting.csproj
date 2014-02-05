@@ -59,6 +59,7 @@
     </Compile>
     <Compile Include="NuGetPackageLoaderTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PackageVersionTest.cs" />
     <Compile Include="UnsafePackageLoaderTest.cs" />
   </ItemGroup>
   <ItemGroup>
