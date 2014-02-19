@@ -10,6 +10,16 @@ Installation
 1. Install the NuGet package
 2. Build
 
+Configuring
+-----------
+You can configure OWASP SafeNuGet by editing the packages/SafeNuGet.1.0.9/build/SafeNuGet.targets (replace the version number with the one you have installed).
+
+Settings:
+
+* CacheTimeInMinutes - how long the list of vulnerabilities should be kept before being refreshed from github
+* DontBreakBuild - (from 1.0.9) - If set to true, will not break build even though vulnerable package is found
+
+
 Want to contribute?
 -------------------
 Great! If you want to contribute to the list of unsafe libraries, please create a pull request, register it as an [issue](https://github.com/OWASP/SafeNuGet/issues) or email me at erlend.oftedal@owasp.org.
