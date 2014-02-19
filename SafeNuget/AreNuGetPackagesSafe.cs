@@ -13,7 +13,8 @@ namespace Owasp.SafeNuGet
     {
         public string ProjectPath { get; set; }
         public string CacheTimeInMinutes { get; set; }
-        private const String _id = "OWASP SafeNuGet";
+        public string DontBreakBuild { get; set; }
+        private const string _id = "OWASP SafeNuGet";
 
         public override bool Execute()
         {
@@ -53,7 +54,7 @@ namespace Owasp.SafeNuGet
                         var s = k.Key.Id + " " + k.Key.Version;
                         BuildEngine.LogWarningEvent(new BuildWarningEventArgs("SECURITY WARNING", s, nugetFile, 0, 0, 0, 0, "Library is vulnerable: " + s + " " + k.Value.InfoUri, "", _id));
                     }
-                    return false;
+                    return "true".Equals(DontBreakBuild, StringComparison.InvariantCultureIgnoreCase);
                 }
 
             } else {
