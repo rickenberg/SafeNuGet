@@ -20,10 +20,12 @@ namespace Owasp.SafeNuGet.Unsafe
             if (!dir.Exists) dir.Create();
             FileInfo file = new FileInfo(Path.Combine(dir.FullName, "unsafepackages.xml"));
             cacheHit = true;
-            if (!file.Exists && file.LastWriteTime < DateTime.Now.AddMinutes(-cacheTimeInMinutes))
+            if (!file.Exists || file.LastWriteTime < DateTime.Now.AddMinutes(-cacheTimeInMinutes))
             {
                 cacheHit = false;
-                new WebClient().DownloadFile(PackageUrl, file.FullName);
+                FileInfo newFile = new FileInfo(file.FullName + ".new");
+                new WebClient().DownloadFile(PackageUrl, newFile.FullName);
+                File.Copy(newFile.FullName, file.FullName, true);   
             }
             using (var s = file.OpenRead())
             {
