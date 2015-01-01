@@ -8,6 +8,7 @@
   <package id="AntiXSS" before="4.2.1" infoUri="http://technet.microsoft.com/en-us/security/bulletin/ms12-007" />
   <package id="Bytescout.Spreadsheet" before="2.30.1183" infoUri="https://nuget.org/packages/Bytescout.Spreadsheet/2.3.0.1247" />
   <package id="Aspose.Pdf" before="7.4.0" infoUri="https://nuget.org/packages/Aspose.Pdf/7.4.0" />
+  <package id="LibGit2Sharp" before="0.20.1" infoUri="https://twitter.com/libgit2sharp/status/545695361114050560" />
   <package id="NServiceBus" before="3.2.8" infoUri="http://tech.groups.yahoo.com/group/nservicebus/message/15582" />
   <package id="Microsoft.Data.Services" beforeOrAt="5.0.1" infoUri="http://blogs.msdn.com/b/astoriateam/archive/2012/10/09/important-security-advisory-2749655-affects-wcf-ds.aspx" />
   <package id="MvvmLight" before="4.1.26.0" infoUri="http://www.galasoft.ch/mvvm/installing/changes/" />
