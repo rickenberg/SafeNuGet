@@ -1,6 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Owasp.SafeNuGet.Unsafe;
 using System.IO;
+using System.Linq;
 
 namespace Owasp.SafeNuGetTesting
 {
@@ -15,6 +16,7 @@ namespace Owasp.SafeNuGetTesting
             var packages = loader.LoadPackages(stream);
             Assert.IsTrue(packages.Count > 5);
 
+            Assert.IsTrue(packages.Any(p => p.Id == "NServiceBus"));
         }
     }
 }
