@@ -19,13 +19,29 @@ namespace Owasp.SafeNuGet.Unsafe
             {
                 cacheHit = false;
                 FileInfo newFile = new FileInfo(file.FullName + ".new");
-                new WebClient().DownloadFile(PackageUrl, newFile.FullName);
+                BuildWebClient().DownloadFile(PackageUrl, newFile.FullName);
                 File.Copy(newFile.FullName, file.FullName, true);   
             }
             using (var s = file.OpenRead())
             {
                 return LoadPackages(s);
             }
+        }
+
+        private static WebClient BuildWebClient()
+        {
+            var client = new WebClient();
+
+            var proxy = WebRequest.DefaultWebProxy;
+            if (proxy == null)
+            {
+                return client;
+            }
+
+            proxy.Credentials = CredentialCache.DefaultCredentials;
+            client.Proxy = proxy;
+
+            return client;
         }
 
         public UnsafePackages GetUnsafePackages()
