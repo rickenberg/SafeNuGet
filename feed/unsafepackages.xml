@@ -31,5 +31,6 @@
   
   <package id="mustache-sharp" before="0.3.1" infoUri="https://github.com/janl/mustache.js/issues/112" />
 
+  <package id="GleamTech.Core" before="1.0.6" infoUri="https://www.nuget.org/packages/GleamTech.Core/" />
 
 </unsafepackages>
