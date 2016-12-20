@@ -35,6 +35,7 @@
 
   <package id="WiX.Toolset.UnofficialFork" before="3.10.2" infoUri="https://www.nuget.org/packages/WiX.Toolset.UnofficialFork/3.10.2" />
   
+  <package id="bzip2.v100" before="1.0.6" infoUri="https://www.nuget.org/packages/bzip2.v100/" />
   
   
 </unsafepackages>
