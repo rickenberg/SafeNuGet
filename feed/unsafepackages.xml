@@ -33,4 +33,8 @@
 
   <package id="GleamTech.Core" before="1.0.6" infoUri="https://www.nuget.org/packages/GleamTech.Core/" />
 
+  <package id="WiX.Toolset.UnofficialFork" before="3.10.2" infoUri="https://www.nuget.org/packages/WiX.Toolset.UnofficialFork/3.10.2" />
+  
+  
+  
 </unsafepackages>
