@@ -40,6 +40,8 @@
   <package id="FileUltimate" before="5.0.7" infoUri="https://www.nuget.org/packages/FileUltimate/5.0.7" />
   <package id="Twilio.Mvc" before="3.2.1" infoUri="https://www.nuget.org/packages/Twilio.Mvc/" />
   <package id="Node.js" before="4.1.2" infoUri="https://www.nuget.org/packages/Node.js/4.1.2" />
+  <package id="Premotion.AspNet.AppHarbor.Integration" before="0.3.0" infoUri="https://www.nuget.org/packages/Premotion.AspNet.AppHarbor.Integration/0.3.0" />
+  
   
   
 </unsafepackages>
