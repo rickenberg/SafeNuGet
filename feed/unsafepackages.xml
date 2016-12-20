@@ -38,6 +38,8 @@
   <package id="bzip2.v100" before="1.0.6" infoUri="https://www.nuget.org/packages/bzip2.v100/" />
   
   <package id="FileUltimate" before="5.0.7" infoUri="https://www.nuget.org/packages/FileUltimate/5.0.7" />
+  <package id="Twilio.Mvc" before="3.2.1" infoUri="https://www.nuget.org/packages/Twilio.Mvc/" />
+  <package id="Node.js" before="4.1.2" infoUri="https://www.nuget.org/packages/Node.js/4.1.2" />
   
   
 </unsafepackages>
