@@ -42,6 +42,6 @@
   <package id="Node.js" before="4.1.2" infoUri="https://www.nuget.org/packages/Node.js/4.1.2" />
   <package id="Premotion.AspNet.AppHarbor.Integration" before="0.3.0" infoUri="https://www.nuget.org/packages/Premotion.AspNet.AppHarbor.Integration/0.3.0" />
   
-  
+  <package id="Microsoft.IdentityModel.Tokens" before="5.1.2" infoUri="https://technet.microsoft.com/library/security/3214296" />
   
 </unsafepackages>
