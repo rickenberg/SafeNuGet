@@ -6,6 +6,11 @@
   <!-- Actual packages - Have something you want to add? Please send a pull request -->
   <!-- possible version descriptors are version, before, beforeOrAt, after, afterOrAt -->
   <package id="AntiXSS" before="4.2.1" infoUri="http://technet.microsoft.com/en-us/security/bulletin/ms12-007" />
+  <package id="Auth0.AuthenticationAPI" afterOrAt="5.8.0" beforeOrAt="6.5.3" infoUri="https://auth0.com/docs/security/bulletins/cve-2019-16929" />
+  <package id="Auth0.OpenIdConnectSigningKeyResolver" beforeOrAt="2.0.0" infoUri="https://auth0.com/docs/security/bulletins/cve-2018-15121" /> 
+  <package id="auth0-aspnet" beforeOrAt="2.1.1" infoUri="https://auth0.com/docs/security/bulletins/cve-2018-15121" /> 
+  <package id="auth0-aspnet-owin" beforeOrAt="2.3.2" infoUri="https://auth0.com/docs/security/bulletins/cve-2018-15121" /> 
+  <package id="Auth0-WCF-Service-JWT" beforeOrAt="1.0.4" infoUri="https://auth0.com/docs/security/bulletins/cve-2019-7644" />
   <package id="Bytescout.Spreadsheet" before="2.30.1183" infoUri="https://nuget.org/packages/Bytescout.Spreadsheet/2.3.0.1247" />
   <package id="Aspose.Pdf" before="7.4.0" infoUri="https://nuget.org/packages/Aspose.Pdf/7.4.0" />
   <package id="LibGit2Sharp" before="0.20.1" infoUri="https://twitter.com/libgit2sharp/status/545695361114050560" />
@@ -45,3 +50,4 @@
   <package id="Microsoft.IdentityModel.Tokens" before="5.1.2" infoUri="https://technet.microsoft.com/library/security/3214296" />
   
 </unsafepackages>
+
